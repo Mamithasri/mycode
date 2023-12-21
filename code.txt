@@ -1,0 +1,7 @@
+proc print data= sashelp.cars;
+run;
+proc sgplot data=sashelp.cars;
+vbar make/group=origin;
+label make="origin where different cars used";
+title "ANALYSIS OF DIFFERENT MODELS OF CARS OF DIFFERENT ORIGIN";
+run;
